@@ -1,0 +1,104 @@
+
+Here's an improved README for your Node.js application, incorporating the information from both your employeeController.js and managerController.js files:
+
+Employee Management System
+A Node.js application for managing employees and managers within departments, with various API endpoints for different actions.
+
+Table of Contents
+Description
+Features
+Prerequisites
+Getting Started
+API Endpoints
+Employee Endpoints
+Manager Endpoints
+Contributing
+License
+Description
+This Node.js application provides an Employee Management System, allowing you to manage both employees and managers across different departments. It offers various API endpoints to perform actions on employees and managers, including creating, updating, and deleting records, performing data aggregations, and more.
+
+Features
+Employee Management:
+
+Add employees to the system.
+View detailed employee information.
+Delete employees from the system.
+Update employee records.
+Get employees with more than 5 years of experience.
+Calculate incremented salaries for employees.
+Get employees within a specific age range.
+Get employees by department.
+Get the average salary by department.
+Get employee salaries.
+Manager Management:
+
+Add managers to the system.
+Get managers by department.
+Redact data based on salary conditions.
+Store aggregated employee data.
+Calculate the average salary by department.
+Calculate the average experience of managers.
+Calculate incremented salaries for managers.
+API Endpoints
+Employee Endpoints
+POST /employees
+
+Add an employee to the system.
+DELETE /employees/:employeeId
+
+Delete an employee by their ID.
+PUT /employees/:employeeId
+
+Update an employee's information by their ID.
+GET /employees/minexperience
+
+Get employees with more than 5 years of experience.
+GET /employees/increment
+
+Calculate incremented salaries for employees.
+GET /employees/ageGrouping
+
+Get employees between 20 and 30 years old.
+GET /employees/department
+
+Get employees by department.
+GET /employees/avgSalaryByDepartment
+
+Get the average salary by department.
+GET /employees/unwindSalary
+
+Get employee salaries.
+GET /employees/changeName
+
+Change the collection where the data is stored.
+GET /employees/redact
+
+Redact data based on salary conditions.
+GET /employees/lookup
+
+Perform a lookup operation.
+GET /employees/all
+
+Get all employees.
+Manager Endpoints
+POST /managers
+
+Add a manager to the system.
+GET /managers/department
+
+Get managers by department.
+GET /managers/salary
+
+Redact data based on salary conditions.
+GET /managers/store-aggregated-employee-data
+
+Store aggregated employee data.
+GET /managers/avgSal
+
+Get the average salary by department.
+GET /managers/avgAge
+
+Get the average experience of managers.
+GET /managers/salaryIncrement
+
+Calculate incremented salaries for managers.
